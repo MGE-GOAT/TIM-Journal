@@ -1,0 +1,17 @@
+# Never commit data or derived caches (private human-voice recordings)
+*.npz
+cache/
+data/
+*.flac
+# keep measurement/reference.wav (sweep stimulus, no PII); ignore any other audio
+/**/*_capture.wav
+inmp_*.wav
+pc_*.wav
+# python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+# logs / results
+*.log
+results/
